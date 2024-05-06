@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu Management - CVA Food Cafe</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.1/sql-wasm.js"></script>
+    </head>
+    
+<body>
+    <header>
+        <div class="container">
+            <!-- Branding and Navigation as before -->
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Menu Management</h2>
+        <form id="add-menu-item-form">
+            <input type="text" id="item-name" placeholder="Name of the dish" required>
+            <textarea id="item-description" placeholder="Description of the dish" required></textarea>
+            <input type="number" id="item-price" placeholder="Price" required>
+            <input type="submit" value="Add Menu Item">
+        </form>
+        <div id="menu-items-list">
+            <!-- Menu items will be displayed here by the JavaScript -->
+        </div>
+    </div>
+
+    <script src="menu-management.js"></script>
+</body>
+</html>

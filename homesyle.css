@@ -1,0 +1,188 @@
+/* General Body and HTML Styles */
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header-container {
+    background-color: #005f73; /* Dark blue background */
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#branding h1 a {
+    color: #ffffff;
+    text-decoration: none;
+    align-items: center;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    align-items: center;
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(216, 8, 57);
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+
+}
+
+nav ul li a:hover, nav ul li a.current {
+    color: #f4a261;
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('https://example.com/your-image.jpg') no-repeat center center/cover; /* Adjust with a relevant image URL */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-button:hover {
+    background-color: #005f73;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container, .header-container {
+        width: 95%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+
+/* Home Page Specific Styles */
+.about-us, .our-menu, .visit-us {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2, .our-menu h2, .visit-us h2 {
+    color: #005f73;
+}
+
+.our-menu ul {
+    list-style: inside square;
+}
+
+.our-menu li {
+    margin: 5px 0;
+    color: #333;
+}
+
+.visit-us {
+    background: #e63946;
+    color: white;
+}
+
+.visit-us h2 {
+    color: #f4a261;
+}
+
+/* Ensure the branding is vibrant */
+#branding h1 {
+    font-size: 2em;
+    color: #f4a261;
+}
+
+/* Enhancing the navigation menu */
+nav ul li a {
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover, nav ul li a.current {
+    background-color: #e63946;
+    color: white;
+}
+
+/* Refining button and input styles for better visuals */
+input[type=submit], button {
+    background-color: #005f73; /* Dark blue for buttons */
+    padding: 12px 20px;
+    font-size: 1em;
+}
+
+input[type=submit]:hover, button:hover {
+    background-color: #e63946; /* Lighter red for button hover */
+}
+
+/* Footer styles if you choose to add one later */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive design for different screen sizes */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
