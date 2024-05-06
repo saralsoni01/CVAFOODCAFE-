@@ -12,7 +12,6 @@ async function fetchOrders() {
     }
 }
 
-// Function to display orders
 function displayOrders(orders) {
     const ordersList = document.getElementById('orders-list');
     ordersList.innerHTML = ''; // Clear the list first
@@ -33,8 +32,9 @@ function displayOrders(orders) {
             default:
                 backgroundColor = 'white'; // Default background color
         }
+        // Include the timestamp in the display
         orderElement.innerHTML = `
-            <p style="background-color: ${backgroundColor};"><strong>Order #${order.id}: ${order.items} - Status: ${order.status}</strong></p>
+            <p style="background-color: ${backgroundColor};"><strong>Order #${order.id}: ${order.items} - Status: ${order.status} - Time: ${order.time}</strong></p>
             <button onclick="updateOrderStatus(${order.id}, 'preparing')">Mark as Preparing</button>
             <button onclick="updateOrderStatus(${order.id}, 'ready')">Mark as Ready</button>
             <button onclick="updateOrderStatus(${order.id}, 'completed')">Mark as Completed</button>
