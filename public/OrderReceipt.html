@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Receipt</title>
+    <link rel="stylesheet" href="orderreceiptstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>CVA Food Cafe</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="user-authentication.html">Login</a></li>
+                    <li><a href="menu-management.html">Menu Management</a></li>
+                    <li><a href="order-management.html">Order Management</a></li>
+                    <li><a href="OrderFood.html">Order Food</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Login-container">
+            <nav>
+                <ul>
+                    <li><a href="profile-management.html">My Profile</a></li>
+                    <li><a>Sign Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="left-container">
+            <img src="Image/food.jpg" alt="Food Image">
+        </div>
+        <div class="right-container">
+            <div id="receipt-details">
+                <!-- Receipt details will be displayed here -->
+            </div>
+            <button id="print-receipt-btn">Print Receipt</button>
+            <button id="save-pdf-btn">Save as PDF</button>
+        </div>
+    </div>
+    <section class="container visit-us">
+        <h2>Visit Us</h2>
+        <p>Come enjoy a cozy dining experience at our cafe located in the heart of the city. We're open from 9 am to 11
+            pm every day!</p>
+    </section>
+     <!-- Include jsPDF library -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+     <!-- Include your orderreceipt.js script after jsPDF -->
+     <script src="orderreceipt.js" defer></script>
+</body>
+
+</html>

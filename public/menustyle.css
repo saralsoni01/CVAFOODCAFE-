@@ -1,0 +1,248 @@
+/* Add this CSS to style the left and right containers */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 15px;
+    display: flex; /* Use flexbox to align items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: space-between; /* Space evenly between the left and right containers */
+}
+
+.left-container,
+.right-container {
+    flex-basis: calc(50% - 10px); /* Set width to 50% minus the gap */
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-bottom: 20px; /* Add margin between containers */
+}
+
+.left-container h2,
+.right-container h2 {
+    text-align: center;
+}
+
+/* Form and button styles */
+input[type=text], input[type=password], input[type=number], select, input[type=datetime-local], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit], button {
+    width: 100%;
+    background-color: #e63946;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, button:hover {
+    background-color: #f4a261;
+}
+
+.right-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and prevent distortion */
+    border-radius: 5px; /* Added border-radius for better visual */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow for better visual */
+}
+
+
+/* General Body and HTML Styles */
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Container Styles */
+.header-container {
+    background-color: #005f73;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#branding h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(216, 8, 57);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.current {
+    background-color: #e63946;
+    color: white;
+}
+
+/* Login Container Styles */
+.Login-container {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.Login-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Login-container ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.Login-container ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('https://example.com/your-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-button:hover {
+    background-color: #005f73;
+}
+
+/* Home Page Specific Styles */
+.about-us, .our-menu, .visit-us {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2, .our-menu h2, .visit-us h2 {
+    color: #005f73;
+}
+
+.our-menu ul {
+    list-style: inside square;
+}
+
+.our-menu li {
+    margin: 5px 0;
+    color: #333;
+}
+
+.visit-us {
+    background: #e63946;
+    color: white;
+}
+
+.visit-us h2 {
+    color: #f4a261;
+}
+
+/* Ensure the branding is vibrant */
+#branding h1 {
+    font-size: 2em;
+    color: #f4a261;
+}
+
+/* Refining button and input styles for better visuals */
+input[type=submit], button {
+    background-color: #005f73;
+    padding: 12px 20px;
+    font-size: 1em;
+    margin-bottom: 5PX;
+}
+
+input[type=submit]:hover, button:hover {
+    background-color: #e63946;
+}
+
+/* Footer styles if you choose to add one later */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive design for different screen sizes */
+@media (max-width: 768px) {
+    .container, .header-container {
+        width: 95%;
+    }
+
+    .left-container, .right-container {
+        flex-basis: 100%; /* Set width to 100% for smaller screens */
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+}

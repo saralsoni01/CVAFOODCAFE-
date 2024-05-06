@@ -1,0 +1,182 @@
+/* General Body and HTML Styles */
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-container,
+.right-container {
+    flex-basis: calc(50% - 10px);
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.left-container h2,
+.right-container h2 {
+    text-align: center;
+}
+
+/* Form and Button Styles */
+input[type=text], input[type=password], input[type=number], select, input[type=datetime-local], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #12859f;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+button:hover {
+    background-color: #064b5e;
+}
+
+/* Header Container Styles */
+.header-container {
+    background-color: #005f73;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#branding h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(216, 8, 57);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.current {
+    background-color: #e63946;
+    color: white;
+}
+
+/* Login Container Styles */
+.Login-container {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.Login-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Login-container ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.Login-container ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Order Management Page Styles */
+
+/* Order List Styles */
+#orders-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.order-item {
+    flex-basis: calc(33.33% - 10px);
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.order-item h3 {
+    margin-top: 0;
+}
+
+.order-item p {
+    margin-bottom: 10px;
+}
+
+.order-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-buttons button {
+    flex-basis: calc(33.33% - 5px);
+    background-color: #e63946;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.order-buttons button:hover {
+    background-color: #f4a261;
+}
+
+/* Responsive design for different screen sizes */
+@media (max-width: 768px) {
+    .container, .header-container {
+        width: 95%;
+    }
+
+    .left-container, .right-container {
+        flex-basis: 100%;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+}

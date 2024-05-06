@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - CVA Food Cafe</title>
+    <link rel="stylesheet" href="userstyle.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>CVA Food Cafe</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="user-authentication.html">Login</a></li>
+                    <li><a href="menu-management.html">Menu Management</a></li>
+                    <li><a href="order-management.html">Order Management</a></li>
+                    <li><a href="OrderFood.html">Order Food</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Login-container">
+            <nav>
+                <ul>
+                    <li><a href="profile-management.html">My Profile</a></li>
+                    <li><a>Sign Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left-container">
+            <h2>Register Your Account</h2>
+            <form id="register-form">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="registerpassword" placeholder="Password" required>
+                <input type="text" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone" required>
+                <label for="enabled">Enabled:</label>
+                <input type="checkbox" id="enabled" checked>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+        <div class="right-container">
+            <h2>Login to Your Account</h2>
+            <form id="login-form">
+                <input type="text" id="loginusername" placeholder="Username" required>
+                <input type="password" id="loginpassword" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+    <section class="container visit-us">
+        <h2>Visit Us</h2>
+        <p>Come enjoy a cozy dining experience at our cafe located in the heart of the city. We're open from 9 am to 11 pm every day!</p>
+    </section>
+    <script src="user-authentication.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Management - CVA Food Cafe</title>
+    <link rel="stylesheet" href="menustyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.1/sql-wasm.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>CVA Food Cafe</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="user-authentication.html">Login</a></li>
+                    <li><a href="menu-management.html">Menu Management</a></li>
+                    <li><a href="order-management.html">Order Management</a></li>
+                    <li><a href="OrderFood.html">Order Food</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Login-container">
+            <nav>
+                <ul>
+                    <li><a href="profile-management.html">My Profile</a></li>
+                    <li><a>Sign Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left-container">
+        <h2>Menu Management</h2>
+        <form id="add-menu-item-form">
+            <input type="hidden" id="item-id">
+            <input type="text" id="item-name" placeholder="Name of the dish" required>
+            <textarea id="item-description" placeholder="Description of the dish" required></textarea>
+            <input type="number" id="item-price" placeholder="Price" required>
+            <input type="submit" id="add-menu-item-button" value="Add Menu Item">
+        </form>
+    </div>
+    <div class="right-container">
+        <div id="menu-items-list">
+            <!-- Menu items will be displayed here by the JavaScript -->
+        </div>
+    </div>
+</div>
+    
+    <section class="container visit-us">
+        <h2>Visit Us</h2>
+        <p>Come enjoy a cozy dining experience at our cafe located in the heart of the city. We're open from 9 am to 11
+            pm every day!</p>
+    </section>
+
+    <script src="menu-management.js"></script>
+</body>
+</html>
